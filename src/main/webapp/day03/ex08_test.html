@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ul {
+	list-style-type: none;
+}
+
+li{
+	font-size: 20px;
+	line-height: 35px;
+}
+
+.check{
+	color: #ccc;
+	font-size: 20px;
+	margin-right: 35px;
+}
+
+.chect:hover {
+	color: #222;
+}
+
+</style>
+</head>
+<body>
+	<h1>할 일 목록</h1>
+	<ul>
+		<li><span class="check">&check;</span>할 일 1</li>
+		<li><span class="check">&check;</span>할 일 2</li>
+		<li><span class="check">&check;</span>할 일 3</li>
+		<li><span class="check">&check;</span>할 일 4</li>
+		<li><span class="check">&check;</span>할 일 5</li>
+	</ul>
+	
+	<script type="text/javascript">
+		let chk = document.querySelector(".check");
+		for (let k of chk) {
+			k.addEventListener("click",(e)=>{
+				e.target.parentNode.style.color="#ccc";
+				e.target.parentNode.style.textDecoration="line-through"
+			});
+		}
+	</script>
+
+	
+	
+	
+	
+</body>
+</html>
